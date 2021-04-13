@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Margarett';
+    src: url('../fonts/Margarett.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Geometos';
+    src: url('../fonts/Geometos Rounded.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('../fonts/Recoleta-Light.woff') format('woff');
+}
+
+hi {
+    font-family: Margarett;
+    font-size: 15.0vw;
+    color: rgb(255, 255, 255);
+}
+
+hb {
+    font-family: Geometos;
+    font-size: 3.0vw;
+    color: rgb(255, 255, 255);
+}
+
+n {
+    font-family: Recoleta;
+    font-size: 2.5vw;
+    color: rgb(0, 0, 0);
+}
+
+.coral-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-10%, -50%);
+    z-index: 3;
+}
+
+.coral-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-100%, -100%);
+    z-index: 3;
+}
+
+.coral-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    transform: translate(70%, -80%);
+
+    z-index: 3;
+}
+
+.content {
+    width: 80%;
+    border: 4px solid rgba(255, 0, 0, 0);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.content img {
+    transform: translate(80%, 0%);
+}
+
+.typewriter h1 {
+    font-family: Geometos;
+    color: #e9a93a;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #e9a93a; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #e9a93a; }
+  }
+
+
